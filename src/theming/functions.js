@@ -38,7 +38,7 @@ module.exports = {
 
   colorObjToString: function (input) {
     const { l, c, h } = input
-    return `${cutNumber(l)} ${cutNumber(c)} ${cutNumber(h)}`
+    return `${cutNumber(l)*100+"%"} ${cutNumber(c)} ${cutNumber(h)}`
   },
 
   generateForegroundColorFrom: function (input, percentage = 0.8) {
